@@ -168,8 +168,31 @@ footer{
 .dark-mode footer{
     background:#000;
 }
-</style>
+#about {
+    background: #ffffff;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
+#about h2 {
+    color: #2c7a4b;
+    margin-top: 20px;
+}
+
+#about p,
+#about li {
+    color: #333;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+#about ul {
+    padding-left: 20px;
+}
+</style>
 </head>
 <body>
 
@@ -280,7 +303,15 @@ It introduces who I am and displays my skills and projects.
 <button onclick="contactMe()">Contact Me</button>
 
 </section>
-
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hi, I'm sowgood, a passionate beginner web developer who enjoys creating
+        beautiful and responsive websites. I'm constantly learning HTML, CSS, and
+        JavaScript to improve my skills and build amazing projects. My goal is to
+        become a professional developer and help people bring their ideas to life.
+    </p>
+</section>
 <footer>
 
 <p>&copy; 2026 Sowgood. All Rights Reserved.</p>
@@ -288,15 +319,51 @@ It introduces who I am and displays my skills and projects.
 <p>Built with HTML, CSS & JavaScript.</p>
 
 </footer>
+<section id="projects">
+    <h2>My Projects</h2>
 
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern personal portfolio built with HTML, CSS and JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Business Website</h3>
+        <p>A clean website designed to help businesses grow online.</p
+    </div>
+
+    <div class="project-card">
+        <h3>Coming Soon...</h3>
+        <p>More exciting projects will be added here.</p>
+    </div>
+</section>
 <script>
-function contactMe(){
-alert("Thanks for visiting my website, Sowgood will contact you soon!");
+function contactMe() {
+    alert("Thanks for visiting my website, Sowgood will contact you soon!");
 }
+
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
 }
 </script>
 
+<section id="projects">
+
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern personal portfolio built with HTML, CSS and JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Business Website</h3>
+        <p>A clean website designed to help businesses grow online.</p
+    </div>
+
+    <div class="project-card">
+        <h3>Coming Soon...</h3>
+        <p>More exciting projects will be added here.</p>
+    </div>
+</section>
 </body>
-</html>
+        </html>
+        
